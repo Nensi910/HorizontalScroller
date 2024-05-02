@@ -1,0 +1,118 @@
+:root {
+  --heading-margin: 80px;
+  --section-color: #00ffff;
+  --section-heading-size: 5rem;
+  --section-heading-size-mobile: 3.5rem;
+  --section-sub-heading-size: 1.5rem;
+  --section-grey-color: rgba(255, 255, 255, 0.6);
+  --heading-letter-spacing: -3px;
+}
+
+@media only screen and (max-width: 800px) {
+  .btn-back-to-top > span {
+    display: none;
+  }
+
+  .btn-back-to-top {
+    width: 30px !important;
+  }
+}
+
+.app-section {
+  padding: 0 25px;
+  margin-bottom: var(--heading-margin);
+}
+
+.app-section-contact {
+  min-height: 100vh !important;
+  padding: 0 25px;
+}
+
+.btn-back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  width: 120px;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.btn-back-to-top > svg {
+  font-size: 1.2rem;
+}
+body {
+  margin:0;
+  font-family:Georgia;
+}
+#container .box {
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  position:relative;
+}
+#container .box > div {
+  width:100px;
+  height:100px;
+  font-size:96px;
+  color:#FFF;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-50px 0 0 -50px;
+  line-height:.7;
+  font-weight:bold;
+}
+#container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color:#999;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+}
+
+.one {
+  background-color: #45CCFF;
+}
+.two {
+  background-color: #49E83E;
+}
+.three {
+  background-color: #EDDE05;
+}
+.four {
+  background-color: #E84B30;
+}
+
+
+/* Translating the content's X ruines the scrollbar length. */
+/*
+#container {
+  overflow:scroll;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: top left;
+  background-color:#999;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(-90deg) translateX(-100vw);
+  transform-origin: top left;
+  white-space:nowrap;
+}
+*/
